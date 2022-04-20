@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+.bold {
+  font-weight: 600; }
+
 a {
   text-decoration: none;
   color: #000000; }
@@ -12,18 +15,62 @@ a:visited {
 h1, h2 {
   font-family: Quicksand; }
 
-.bold {
-  font-weight: 600; }
-
 body {
   font-size: 20px;
-  font-family: Montserrat Alternates; }
+  font-family: Montserrat Alternates;
+  line-height: 1.5; }
 
-.header {
+header {
   background-color: #800080;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
   align-items: center; }
+
+.about {
+  font-family: Montserrat Alternates; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Quicksand; }
+  .contacts__item {
+    display: flex;
+    align-items: center; }
+    .contacts__item:nth-child(2) {
+      padding: 30px 0px; }
+    .contacts__item a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      transition: 0.2s; }
+    .contacts__item a:nth-child(2):visited {
+      color: none; }
+    .contacts__item img {
+      padding-right: 10px; }
+
+.container {
+  display: flex;
+  justify-content: space-around; }
+  .container .container-left {
+    width: 45%; }
+    .container .container-left .container-left__block p {
+      max-width: 60%; }
+    .container .container-left .container-left__block .container-left__header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px; }
+      .container .container-left .container-left__block .container-left__header img {
+        padding: 20px 20px 20px 0; }
+    .container .container-left .container-left__block .container-left__lists {
+      display: flex;
+      text-align: center; }
+      .container .container-left .container-left__block .container-left__lists :nth-child(2) {
+        padding: 0 20px 0 20px; }
+  .container .container-right {
+    width: 45%; }
+    .container .container-right .container-right__header {
+      display: flex;
+      align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

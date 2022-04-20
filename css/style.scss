@@ -1,27 +1,124 @@
 * {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+}
+
+$ff-q: Quicksand;
+$ff-m: Montserrat Alternates;
+$fz-standart: 20px;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-large: 700;
+$tc: center;
+$al-centre: center;
+
+.bold { 
+    font-weight: 600;
+}
+
 
 a {
     text-decoration: none;
-    color: #000000; }
-
+    color: #000000;
+}
 a:visited {
-    color: #000000; }
-
+    color: #000000;
+}
 h1, h2 {
-    font-family: Quicksand; }
-
-.bold {
-    font-weight: 600; }
+    font-family: $ff-q;
+}
 
 body {
-    font-size: 20px;
-    font-family: Montserrat Alternates; }
+    font-size: $fz-standart;
+    font-family: $ff-m;
+    line-height: 1.5;
+}
 
-.header {
+header {
     background-color: #800080;
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
-    align-items: center; }
+    padding-top: $fz-standart * 2;
+    align-items: center;
+
+}
+.about {
+    // color: green;
+    font-family: $ff-m;
+
+    &__item {
+        // color: red;
+
+    //    &:first-child {
+    //         // font-size: $fz-large;
+    //     }
+
+    }
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // padding-top: 45px;
+    font-family: $ff-q;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) {
+            padding: $fz-standart+10 0px;
+            
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+            transition: 0.2s;
+        }
+        a:nth-child(2):visited {
+            color: none;
+        }
+        
+
+        img {
+            padding-right: $fz-standart - 10;
+        }
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    .container-left {
+        width: 45%;
+        .container-left__block {
+
+            p {
+                max-width: 60%;
+            }
+            .container-left__header {
+                display: flex;
+                align-items: $al-centre;
+                padding-bottom: $fz-standart;
+                img {
+                    padding: $fz-standart $fz-standart $fz-standart 0 ;
+                }
+            }
+            .container-left__lists {
+                display: flex;
+                text-align: center;
+                :nth-child(2) {
+                    padding: 0 $fz-standart 0 $fz-standart;
+                }
+            }
+        }
+    }
+
+
+    .container-right {
+        width: 45%;
+        .container-right__header {
+            display: flex;
+            align-items: $al-centre;
+        }
+    }
+}
