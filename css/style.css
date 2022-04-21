@@ -53,24 +53,49 @@ header {
   display: flex;
   justify-content: space-around; }
   .container .container-left {
-    width: 45%; }
-    .container .container-left .container-left__block p {
-      max-width: 60%; }
-    .container .container-left .container-left__block .container-left__header {
+    width: 35%; }
+    .container .container-left .container-left__block {
+      align-items: center; }
+      .container .container-left .container-left__block .paragraph {
+        max-width: 60%; }
+      .container .container-left .container-left__block .container-left__header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px; }
+        .container .container-left .container-left__block .container-left__header img {
+          padding: 20px 20px 20px 0; }
+      .container .container-left .container-left__block .container-left__lists {
+        display: flex;
+        text-align: center; }
+        .container .container-left .container-left__block .container-left__lists :nth-child(2) {
+          padding: 0 20px 0 20px; }
+      .container .container-left .container-left__block .container-left__content {
+        display: flex;
+        align-items: center; }
+        .container .container-left .container-left__block .container-left__content .container-left__img {
+          padding-top: 20px; }
+        .container .container-left .container-left__block .container-left__content .container-left__paragraph .container-left__item {
+          padding: 20px 0 0 20px; }
+  .container .container-right {
+    width: 55%; }
+    .container .container-right .container-right__header {
       display: flex;
       align-items: center;
       padding-bottom: 20px; }
-      .container .container-left .container-left__block .container-left__header img {
+      .container .container-right .container-right__header img {
         padding: 20px 20px 20px 0; }
-    .container .container-left .container-left__block .container-left__lists {
-      display: flex;
-      text-align: center; }
-      .container .container-left .container-left__block .container-left__lists :nth-child(2) {
-        padding: 0 20px 0 20px; }
-  .container .container-right {
-    width: 45%; }
-    .container .container-right .container-right__header {
+    .container .container-right .container-right__block {
       display: flex;
       align-items: center; }
+      .container .container-right .container-right__block .container-right__row {
+        display: flex;
+        flex-direction: column; }
+        .container .container-right .container-right__block .container-right__row .container-right__row-item {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          .container .container-right .container-right__block .container-right__row .container-right__row-item :nth-child(2) {
+            width: 50%;
+            padding: 20px 0 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
